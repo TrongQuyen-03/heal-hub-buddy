@@ -7,7 +7,8 @@ import {
   Settings,
   Activity,
   Heart,
-  Stethoscope
+  Stethoscope,
+  Building2
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -31,6 +32,7 @@ const navigationItems = [
   { title: "Lịch hẹn", url: "/appointments", icon: Calendar },
   { title: "Hồ sơ bệnh án", url: "/medical-records", icon: FileText },
   { title: "Theo dõi sức khỏe", url: "/monitoring", icon: Activity },
+  { title: "Về chúng tôi", url: "/about", icon: Building2 },
 ];
 
 const systemItems = [
@@ -67,8 +69,8 @@ export function MedicalSidebar() {
             </div>
             {!collapsed && (
               <div>
-                <h2 className="text-lg font-bold text-foreground">MedCare</h2>
-                <p className="text-sm text-muted-foreground">Quản lý bệnh nhân</p>
+                <h2 className="text-lg font-bold text-foreground">MedicalHope</h2>
+                <p className="text-sm text-muted-foreground">Trung tâm y tế</p>
               </div>
             )}
           </div>

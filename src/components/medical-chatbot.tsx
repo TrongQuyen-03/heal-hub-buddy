@@ -33,7 +33,7 @@ export function MedicalChatbot({ isMinimized, onToggleMinimize }: ChatbotProps) 
     {
       id: "1",
       role: "assistant",
-      content: "Xin chào! Tôi là AI Assistant của hệ thống MedCare. Tôi có thể hỗ trợ bạn với:\n\n• Tư vấn y tế cơ bản\n• Tìm kiếm thông tin bệnh nhân\n• Hướng dẫn sử dụng hệ thống\n• Giải đáp thắc mắc về quy trình\n\nBạn cần hỗ trợ gì?",
+      content: "Xin chào! Tôi là AI Assistant của trung tâm y tế MedicalHope. Tôi có thể hỗ trợ bạn với:\n\n• Tư vấn y tế và sức khỏe cơ bản\n• Tìm kiếm thông tin bệnh nhân\n• Hướng dẫn quy trình khám chữa bệnh\n• Giải đáp thắc mắc về dịch vụ y tế\n• Hỗ trợ sử dụng hệ thống quản lý\n\nBạn cần hỗ trợ gì hôm nay?",
       timestamp: new Date()
     }
   ]);
@@ -88,15 +88,16 @@ export function MedicalChatbot({ isMinimized, onToggleMinimize }: ChatbotProps) 
           messages: [
             {
               role: 'system',
-              content: `Bạn là AI Assistant của hệ thống quản lý bệnh nhân MedCare. Hãy trả lời bằng tiếng Việt và tập trung vào:
+              content: `Bạn là AI Assistant của trung tâm y tế MedicalHope. Hãy trả lời bằng tiếng Việt và tập trung vào:
 
-1. Tư vấn y tế cơ bản (không thay thế bác sĩ)
-2. Hướng dẫn sử dụng hệ thống quản lý bệnh nhân
-3. Giải thích quy trình khám bệnh
-4. Hỗ trợ tìm kiếm thông tin
+1. Tư vấn y tế và sức khỏe cơ bản (không thay thế bác sĩ chuyên khoa)
+2. Hướng dẫn quy trình khám chữa bệnh tại trung tâm
+3. Giải thích về các dịch vụ y tế của MedicalHope
+4. Hỗ trợ sử dụng hệ thống quản lý bệnh nhân
+5. Tư vấn về phòng ngừa bệnh tật và chăm sóc sức khỏe
 
-Luôn nhắc nhở người dùng tham khảo ý kiến bác sĩ cho các vấn đề nghiêm trọng.
-Giữ câu trả lời ngắn gọn, rõ ràng và hữu ích.`
+Luôn nhắc nhở bệnh nhân đến trực tiếp trung tâm y tế MedicalHope để được thăm khám chính xác.
+Giữ câu trả lời chuyên nghiệp, thân thiện và hữu ích.`
             },
             {
               role: 'user',
@@ -160,7 +161,7 @@ Giữ câu trả lời ngắn gọn, rõ ràng và hữu ích.`
           <div className="flex items-center justify-between">
             <CardTitle className="flex items-center gap-2 text-lg">
               <Bot className="h-5 w-5" />
-              AI Medical Assistant
+              AI MedicalHope Assistant
             </CardTitle>
             <div className="flex items-center gap-2">
               <Button

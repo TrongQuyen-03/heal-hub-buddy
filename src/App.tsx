@@ -11,6 +11,7 @@ import Dashboard from "./pages/Dashboard";
 import Patients from "./pages/Patients";
 import PatientForm from "./pages/PatientForm";
 import Appointments from "./pages/Appointments";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,7 +33,7 @@ const App = () => {
                   <SidebarTrigger />
                   <div className="flex-1" />
                   <div className="text-sm text-muted-foreground">
-                    Hệ thống quản lý bệnh nhân
+                    Trung tâm y tế MedicalHope
                   </div>
                 </header>
                 <div className="flex-1 p-6 overflow-auto">
@@ -41,6 +42,7 @@ const App = () => {
                     <Route path="/patients" element={<Patients />} />
                     <Route path="/patients/new" element={<PatientForm />} />
                     <Route path="/appointments" element={<Appointments />} />
+                    <Route path="/about" element={<About />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </div>

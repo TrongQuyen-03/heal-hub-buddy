@@ -67,8 +67,8 @@ export default function Dashboard() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-          <p className="text-muted-foreground">Tổng quan hệ thống quản lý bệnh nhân</p>
+          <h1 className="text-3xl font-bold text-foreground">Dashboard MedicalHope</h1>
+          <p className="text-muted-foreground">Tổng quan hoạt động trung tâm y tế</p>
         </div>
         <div className="flex items-center gap-3">
           <Button variant="outline" size="sm">
