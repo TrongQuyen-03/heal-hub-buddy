@@ -16,6 +16,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
 // Admin/Doctor pages
@@ -55,9 +57,11 @@ const App = () => {
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Home />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/services" element={<Services />} />
-                  <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
                   <Route path="/login" element={<div>Login Page</div>} />
                   <Route path="/register" element={<div>Register Page</div>} />
                   <Route path="*" element={<NotFound />} />
